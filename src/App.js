@@ -1,35 +1,33 @@
-import {
-  Button,
-  FormControl,
-  InputLabel,
-} from "@material-ui/core";
+import { Button, FormControl, InputLabel } from "@material-ui/core";
 import React, { useEffect } from "react";
 import { useState } from "react";
+import db from "./firebase";
 import "./App.css";
 import Message from "./Message";
 
 function App() {
   const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([
-  {username : 'rian',text :'hey guys'},
-  {username : 'qazi',text: 'whats up'},
-  {username : 'haha',text : 'How are u?'}]);
-  const [username,setUsername] = useState('');
+  const [messages, setMessages] = useState([]);
+  const [username, setUsername] = useState("");
 
+  useEffect(() => {
+    db.collection("messages").onSnapshot((snapshot) => {
+      setMessages(snapshot.docs.map((doc) => doc.data()));
+    });
+  }, []);
 
-  useEffect(() =>{
-    setUsername(prompt('Please enter'))
-  },[])
-
+  useEffect(() => {
+    setUsername(prompt("Please enter"));
+  }, []);
 
   const sendMessage = (event) => {
     event.preventDefault();
-    setMessages([...messages, {username: username ,text:input}]);
+    setMessages([...messages, { username: username, text: input }]);
     setInput("");
   };
   return (
     <div className="App">
-    <h2>Welcome {username}</h2>
+      <h2>Welcome {username}</h2>
       <form>
         <FormControl>
           <InputLabel>Enter a message</InputLabel>
@@ -49,13 +47,9 @@ function App() {
         </FormControl>
       </form>
 
-      {
-        messages.map(message =>(
-          <Message username={username} message={message}/>
-         
-        ))
-      }
-     
+      {messages.map((message) => (
+        <Message username={username} message={message} />
+      ))}
     </div>
   );
 }
