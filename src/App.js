@@ -24,7 +24,7 @@ function App() {
 
   const sendMessage = (event) => {
     event.preventDefault();
-    setMessages([...messages, input]);
+    setMessages([...messages, {username: username ,text:input}]);
     setInput("");
   };
   return (
