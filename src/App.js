@@ -1,13 +1,12 @@
 import {
   Button,
   FormControl,
-  FormHelperText,
-  Input,
   InputLabel,
 } from "@material-ui/core";
 import React from "react";
 import { useState } from "react";
 import "./App.css";
+import Message from "./Message";
 
 function App() {
   const [input, setInput] = useState("");
@@ -41,9 +40,14 @@ function App() {
           </Button>
         </FormControl>
       </form>
-      {messages.map((messages) => (
-        <p>{messages}</p>
-      ))}
+
+      {
+        messages.map(message =>(
+          <Message text={message}/>
+         
+        ))
+      }
+     
     </div>
   );
 }
