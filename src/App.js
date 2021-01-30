@@ -4,6 +4,7 @@ import { useState } from "react";
 import db from "./firebase";
 import "./App.css";
 import Message from "./Message";
+import firebase from 'firebase';
 
 function App() {
   const [input, setInput] = useState("");
@@ -11,7 +12,8 @@ function App() {
   const [username, setUsername] = useState("");
 
   useEffect(() => {
-    db.collection("messages").onSnapshot((snapshot) => {
+    db.collection("messages").orderBy('timestamp','desc')
+    .onSnapshot((snapshot) => {
       setMessages(snapshot.docs.map((doc) => doc.data()));
     });
   }, []);
@@ -22,6 +24,14 @@ function App() {
 
   const sendMessage = (event) => {
     event.preventDefault();
+
+    db.collection('messages').add({
+      message : input,
+      username : username,
+      timestamp : firebase.firestore.FieldValue.serverTimestamp()
+    })
+
+
     setMessages([...messages, { username: username, text: input }]);
     setInput("");
   };
