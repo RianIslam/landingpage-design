@@ -8,3 +8,9 @@
     margin: 0 auto;
     color: tomato;
 }
+
+.main-form{
+    width: 900px;
+    background-color: red;
+    margin: 0 auto;
+}
