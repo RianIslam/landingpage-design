@@ -48,9 +48,9 @@ body {
 .form-input-one input {
   border: none;
   background: transparent;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   padding: 4px;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   width: 99%;
   margin-bottom: 30px;
@@ -65,9 +65,9 @@ body {
   display: block;
   border: none;
   background: transparent;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   padding: 4px;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   width: 98.4%;
   margin-bottom: 30px;
@@ -76,9 +76,9 @@ body {
 .form-input-two select{
     width: 100%;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
   padding: 4px;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   margin-bottom: 30px;
   outline: none;
@@ -92,11 +92,45 @@ body {
     color: #616161;
     border: none;
 }
-
+.form-input-two .inputicon{
+    position: relative;
+}
+.form-input-two .username{
+    position: absolute;
+   left: 1170px;
+   top:110px;
+   color: black;
+}
+.email{
+    position: absolute;
+   left: 1170px;
+   top:170px;
+   color: black;
+}
+.lock{
+    position: absolute;
+    left: 1170px;
+    top:280px;
+    color: black;
+}
+.comfirm-lock{
+     position: absolute;
+    left: 1170px;
+    top:330px;
+    color: black;
+}
 
 
 /* button design */
-
 .form-button{
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+.form-button button{
+    background-color: black;
+    padding: 20px 40px;
+    color: white;
+    cursor: pointer;
 }

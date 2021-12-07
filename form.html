@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Design</title>
     <link rel="stylesheet" href="./style/form.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   </head>
   <body>
     <div class="container">
@@ -25,18 +26,35 @@
               <input type="text" placeholder="Last Name" />
             </div>
             <div class="form-input-two">
-              <input type="text" placeholder="Username" />
-              <input type="text" placeholder="Email Address" />
+                <div>
+                    <input class="inputicon" type="text" placeholder="Username" />
+                  <span class="username"><i class="fas fa-user-alt"></i></span>
+                </div>
+              <div>
+                <input type="text" placeholder="Email Address" />
+                <span class="email"><i class="fas fa-envelope-square"></i></span>
+              </div>
               <select type="text" placeholder="Gender">
-                <option value="1">Male</option>
-                <option value="2">Female</option>   
+                <option value="1">Gender</option>
+                <option value="2">Male</option>
+                <option value="3">Female</option>   
               </select>
-              <input type="text" placeholder="Password" />
-              <input type="text" placeholder="Confirm Password" />
+              <div>
+                <input type="text" placeholder="Password" />
+                  <span class="lock">
+                    <i class="fas fa-lock"></i>
+                  </span>
+              </div>
+             <div>
+                <input type="text" placeholder="Confirm Password" />
+                <span class="comfirm-lock">
+                    <i class="fas fa-lock"></i>
+                </span>
+             </div>
             </div>
 
             <div class="form-button">
-                <input type="button" class="button">
+                <button type="submit">Register Now <span class="arrow"><i class="fas fa-arrow-right"></i></span></button>
             </div>
           </div>
         </div>
