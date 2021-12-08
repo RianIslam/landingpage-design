@@ -1,6 +1,8 @@
+
 * {
   margin: 0;
   padding: 0;
+  
 }
 body {
   background-image: url("https://images.unsplash.com/photo-1490709249654-d82101f4857f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
@@ -11,6 +13,7 @@ body {
   align-items: center;
   height: 100vh;
   justify-content: center;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .container {
@@ -98,25 +101,25 @@ body {
 .form-input-two .username{
     position: absolute;
    left: 1170px;
-   top:110px;
+   top:190px;
    color: black;
 }
 .email{
     position: absolute;
    left: 1170px;
-   top:170px;
+   top:240px;
    color: black;
 }
 .lock{
     position: absolute;
     left: 1170px;
-    top:280px;
+    top:360px;
     color: black;
 }
 .comfirm-lock{
      position: absolute;
     left: 1170px;
-    top:330px;
+    top:410px;
     color: black;
 }
 
