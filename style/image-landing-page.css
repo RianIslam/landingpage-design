@@ -13,7 +13,8 @@ body {
 }
 header {
   width: 100%;
-  padding: 30px 0px;
+  padding: 10px 0px;
+  border-bottom: 2px solid #ddd;
 }
 
 .container {
@@ -24,6 +25,7 @@ header {
 .nav {
   display: flex;
   justify-content: space-between;
+
 }
 
 .menu ul li{
@@ -35,4 +37,117 @@ header {
 .menu ul li a{
     font-weight: 400;
     font-size: 16px;
+    color: #3d3d3d;
+}
+.banner{
+    width: 100%;
+    padding: 80px 0px;
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 54px;
+    color: #0f2656;
+}
+.banner-content h1 span{
+    color: #0081ff;
+}
+.banner-content p{
+    font-size: 16px;
+    color: #5c5c5c;
+    margin: 24px 0px;
+}
+
+
+
+/* about styling */
+.about{
+    width: 100%;
+    padding: 40px 0;
+}
+
+.about-content{
+    display: flex;
+}
+.a-left, .a-right{
+    flex-basis: 50%;
+}
+.a-left{
+    text-align: right;
+}
+.a-left h2{
+    font-size: 42px;
+    color: #f15767;
+    margin-bottom: 10px;
+}
+.a-left p{
+    font-size: 16px;
+    color: #5c5c5c;
+}
+.a-right{
+    margin-left: 20px;
+}
+.a-right h2{
+    font-size: 42px;
+    color: #0f2656;
+    margin-bottom: 10px;
+}
+
+
+
+/* service styling */
+
+.service{
+    width: 100%;
+    padding: 60px 0px;
+  
+}
+.service-content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.service-content img{
+    width: 100%;
+}
+
+.pink{
+    background-color: #fdebed;
+}
+.green{
+    background-color: #ebf9f4;
+}
+.yellow{
+    background-color: #fff738;
+}
+
+.item{
+    margin: 22px 16px;
+    border-radius: 4px;
+}
+.item div{
+    padding: 32px 16px;
+}
+.item h3{
+    font-size: 20px;
+    color: #0f2656;
+    margin-bottom: 10px;
+}
+.item p{
+    font-size: 16px;
+    color: #5c5c5c;
+}
+
+
+
+/* footer styling */
+
+footer{
+    width: 100%;
+    background-color: #008aff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p{
+    font-size: 16px;
+    color: #fff;
 }
