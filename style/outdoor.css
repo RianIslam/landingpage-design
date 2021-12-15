@@ -11,3 +11,20 @@ a {
 body {
   font-family: "Readex Pro", sans-serif;
 }
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.menus ul li{
+    display: inline-block;
+    list-style: none;
+}
