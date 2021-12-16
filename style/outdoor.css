@@ -252,6 +252,23 @@ header {
 /* destination section start */
 .destination{
   margin-top: 50px;
+  margin-bottom: 60px;
+}
+.des-content h2{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.des-content a button{
+  padding: 15px 25px;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 16px;
+  border: none;
+  background-color: #fb2056;
+  margin-bottom: 10px;
 }
 .destination-box{
   display: flex;
@@ -288,3 +305,23 @@ header {
 }
 
 /* destination section end */
+
+
+
+/* footer design start */
+.outdoor-footer{
+  height: 10vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.footer-content p{
+  font-size: 14px;
+  padding: 10px 0;
+}
+.footer-content span{
+  font-size: 12px;
+}
+/* footer design end */
