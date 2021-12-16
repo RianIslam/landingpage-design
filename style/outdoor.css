@@ -1,107 +1,290 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
- 
 }
 a {
   text-decoration: none;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-.container{
-    width: 1140px;
-    margin: 0 auto;
+.container {
+  width: 1140px;
+  margin: 0 auto;
 }
-header{
-    width: 100%;
-    padding: 15px 0px;
-    position: absolute;
+header {
+  width: 100%;
+  padding: 15px 0px;
+  position: absolute;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
-.menus ul li{
-    display: inline-block;
-    list-style: none;
+.menus ul li {
+  display: inline-block;
+  list-style: none;
 }
-.menus ul li a{
-    margin-right: 24px;
-    color: white;
-    font-weight: bold;
+.menus ul li a {
+  margin-right: 24px;
+  color: white;
+  font-weight: bold;
 }
-.menus{
-    display: flex;
-    align-items: center;
+.menus {
+  display: flex;
+  align-items: center;
 }
-.menu-btn{
-    padding: 10px 20px;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-    font-weight: 600;
-    border-radius: 35px;
-    font-size: 13px;
-    cursor: pointer;
+.menu-btn {
+  padding: 10px 20px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  border-radius: 35px;
+  font-size: 13px;
+  cursor: pointer;
 }
-.logo h3{
-    color: white;
-    font-weight: bold;
-    font-size: 32px;
+.logo h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 /* banner section start */
-.banner{
+.banner {
+  width: 100%;
+  background-image: url(../images/outdoor/outdoor.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-blend-mode: saturation;
+  background-color: rgb(0, 0, 0, 0.2);
+}
+.banner-content {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-content h3 {
+  color: white;
+  font-size: 32px;
+  font-style: italic;
+}
+.line {
+  height: 3px;
+  width: 80px;
+  background: #fb2056;
+  margin: 10px auto;
+}
+.banner-content h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.banner-content button {
+  padding: 20px 32px;
+  background: #fb2056;
+  border: none;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 4px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+/* banner section end */
+
+/* testimonial section start from here */
+
+.testimonial {
+  width: 100%;
+  background: #f4f5f9;
+  padding: 80px 0px;
+}
+.testimonial .item {
+  text-align: center;
+}
+.testimonial .item P {
+  font-size: 22px;
+  font-style: italic;
+  color: #353535;
+  margin-bottom: 16px;
+}
+
+.testimonial .item h6 {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: gray;
+}
+
+/* testimonial section end from here */
+
+/* event section start from here  */
+
+.events {
+  width: 100%;
+  padding: 100px 0px;
+  background: white;
+}
+.events-content h2 {
+  font-size: 42px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+.events-gallery img{
     width: 100%;
+}
+.events-gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 60px;
+    
+}
+
+.event-post{
+    text-align: center;
+    margin: 40px;
+}
+.event-post h4{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 40px 0 30px 0;
+}
+
+.event-post p{
+    font-size: 16px;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+.event-post a{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fb2056;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.main-box{
+    z-index: 999;
+    position: relative;
+}
+.main-box img{
+    z-index: 999;
+}
+.box{
+    position: absolute;
+    height: 98%;
+    width: 92%;
+    background: #dbdbdb;
+    top: 17px;
+    left: 54px;
+    border-radius: 6px;
+    z-index: -1;
+}
+/* event section end from here  */
+
+
+/* explore world section start */
+.explore{
     background-image: url(../images/outdoor/outdoor.jpg);
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    background-blend-mode:saturation;
-    background-color: rgb(0, 0, 0,0.2);
+    height: 80vh;
 }
-.banner-content{
-    height: 100vh;
-    text-align: center;
+.explore-flex{
     display: flex;
     align-items: center;
     justify-content: center;
-  
 }
-.banner-content h3{
-    color: white;
-    font-size: 32px;
-    font-style: italic;
+.blank{
+  flex-basis: 50%;
 }
-.banner-content .line{
-    height: 3px;
-    width: 80px;
-    background: #fb2056;
-    margin: 10px auto;
+.fill{
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  height: 80vh;
 }
-.banner-content h1{
-    font-size: 60px;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+.fill h1{
+  color: white;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
-.banner-content button{
-    padding: 20px 32px;
-    background: #fb2056;
-    border: none;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 4px;
-    border-radius: 35px;
-    cursor: pointer;
+.fill p{
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
-/* banner section end */
+.line-left{
+  height: 3px;
+  width: 80px;
+  background: #fb2056;
+  margin-bottom: 30px;
+}
+.fill a{
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #f4f5f9;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+/* explore world section end */
+
+
+
+/* destination section start */
+.destination{
+  margin-top: 50px;
+}
+.destination-box{
+  display: flex;
+}
+.des-content{
+  flex-basis: 30%;
+}
+.des-img{
+  flex-basis: 70%;
+}
+.box-one{
+  margin: 10px;
+  flex-basis: 35%;
+}
+.box-two{
+  margin: 10px;
+  flex-basis: 35%;
+}
+.box-one img{
+  width: 100%;
+  margin: 10px;
+}
+.box-two img{
+  width: 100%;
+  margin: 10px;
+}
+.box-imgs{
+  display: flex;
+  justify-content: center;
+}
+.des-img{
+  height: 85vh;
+  overflow: hidden;
+}
+
+/* destination section end */
