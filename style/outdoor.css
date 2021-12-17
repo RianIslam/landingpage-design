@@ -143,102 +143,100 @@ header {
   color: #000;
   text-align: center;
 }
-.events-gallery img{
-    width: 100%;
+.events-gallery img {
+  width: 100%;
 }
-.events-gallery{
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 60px;
-    
-}
-
-.event-post{
-    text-align: center;
-    margin: 40px;
-}
-.event-post h4{
-    font-size: 20px;
-    color: #000;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 40px 0 30px 0;
+.events-gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 60px;
 }
 
-.event-post p{
-    font-size: 16px;
-    color: #353535;
-    margin-bottom: 20px;
+.event-post {
+  text-align: center;
+  margin: 40px;
+}
+.event-post h4 {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 40px 0 30px 0;
 }
 
-.event-post a{
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #fb2056;
-    font-weight: bold;
-    letter-spacing: 3px;
+.event-post p {
+  font-size: 16px;
+  color: #353535;
+  margin-bottom: 20px;
 }
 
-.main-box{
-    z-index: 999;
-    position: relative;
+.event-post a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fb2056;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
-.main-box img{
-    z-index: 999;
+
+.main-box {
+  z-index: 999;
+  position: relative;
 }
-.box{
-    position: absolute;
-    height: 98%;
-    width: 92%;
-    background: #dbdbdb;
-    top: 17px;
-    left: 54px;
-    border-radius: 6px;
-    z-index: -1;
+.main-box img {
+  z-index: 999;
+}
+.box {
+  position: absolute;
+  height: 98%;
+  width: 92%;
+  background: #dbdbdb;
+  top: 17px;
+  left: 54px;
+  border-radius: 6px;
+  z-index: -1;
 }
 /* event section end from here  */
 
-
 /* explore world section start */
-.explore{
-    background-image: url(../images/outdoor/outdoor.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
+.explore {
+  background-image: url(../images/outdoor/outdoor.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
 }
-.explore-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.explore-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.blank{
+.blank {
   flex-basis: 50%;
 }
-.fill{
+.fill {
   flex-basis: 50%;
   display: flex;
   align-items: center;
   height: 80vh;
 }
-.fill h1{
+.fill h1 {
   color: white;
   font-size: 50px;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.fill p{
+.fill p {
   color: white;
   font-size: 16px;
   margin-bottom: 20px;
 }
-.line-left{
+.line-left {
   height: 3px;
   width: 80px;
   background: #fb2056;
   margin-bottom: 30px;
 }
-.fill a{
+.fill a {
   font-size: 14px;
   text-transform: uppercase;
   color: #f4f5f9;
@@ -247,19 +245,17 @@ header {
 }
 /* explore world section end */
 
-
-
 /* destination section start */
-.destination{
+.destination {
   margin-top: 50px;
   margin-bottom: 60px;
 }
-.des-content h2{
+.des-content h2 {
   font-size: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.des-content a button{
+.des-content a button {
   padding: 15px 25px;
   color: white;
   letter-spacing: 2px;
@@ -270,46 +266,44 @@ header {
   background-color: #fb2056;
   margin-bottom: 10px;
 }
-.destination-box{
+.destination-box {
   display: flex;
 }
-.des-content{
+.des-content {
   flex-basis: 30%;
 }
-.des-img{
+.des-img {
   flex-basis: 70%;
 }
-.box-one{
+.box-one {
   margin: 10px;
   flex-basis: 35%;
 }
-.box-two{
+.box-two {
   margin: 10px;
   flex-basis: 35%;
 }
-.box-one img{
+.box-one img {
   width: 100%;
   margin: 10px;
 }
-.box-two img{
+.box-two img {
   width: 100%;
   margin: 10px;
 }
-.box-imgs{
+.box-imgs {
   display: flex;
   justify-content: center;
 }
-.des-img{
+.des-img {
   height: 85vh;
   overflow: hidden;
 }
 
 /* destination section end */
 
-
-
 /* footer design start */
-.outdoor-footer{
+.outdoor-footer {
   height: 10vh;
   background-color: black;
   color: white;
@@ -317,11 +311,11 @@ header {
   display: flex;
   align-items: center;
 }
-.footer-content p{
+.footer-content p {
   font-size: 14px;
   padding: 10px 0;
 }
-.footer-content span{
+.footer-content span {
   font-size: 12px;
 }
 /* footer design end */
