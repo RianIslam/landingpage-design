@@ -90,5 +90,11 @@ a {
   text-shadow: 3px 5px #f7f7f7;
 }
 .banner-left h2 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 114px;
+  text-transform: uppercase;
+  color: #3d2514;
+  letter-spacing: 2px;
+  text-shadow: 3px 5px #f7f7f7;
 }
 /* banner section end */
