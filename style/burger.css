@@ -55,3 +55,40 @@ a {
   color: #3d2514;
   letter-spacing: 3px;
 }
+
+/* banner section start */
+.banner {
+  background-image: url(../images/burger/homebg.png);
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-content {
+  display: flex;
+}
+.banner-left,
+.banner-right {
+  flex-basis: 50%;
+}
+.banner-right img {
+  width: 100%;
+}
+.banner-left span {
+  font-family: "bebas Neue" cursive;
+  color: #3d2514;
+  font-size: 23px;
+  border: 2px dashed #3d2514;
+  padding: 0px 6px;
+}
+.banner-left h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 114px;
+  text-transform: uppercase;
+  color: #3d2514;
+  letter-spacing: 2px;
+  text-shadow: 3px 5px #f7f7f7;
+}
+.banner-left h2 {
+}
+/* banner section end */
