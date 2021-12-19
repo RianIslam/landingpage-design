@@ -111,3 +111,45 @@ a {
   text-shadow: 3px 5px #f7f7f7;
 }
 /* banner section end */
+
+/* fratures section start */
+
+.features {
+  width: 100%;
+  padding: 100px 0px;
+}
+.f-left {
+  margin-right: 20px;
+}
+.f-right {
+  margin-left: 20px;
+}
+.f-content {
+  display: flex;
+}
+.f-content img {
+  width: 100%;
+  height: auto;
+}
+.b-item {
+  position: relative;
+}
+.b-content {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.b-content h3 {
+  font-size: 25px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+}
+.b-content h2 {
+  font-size: 42px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 500;
+}
+/* fratures section end */
