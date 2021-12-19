@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --red: #bf2222;
+  --yellow: #ffc045;
+  --coffe: #3d2514;
+}
+
 body {
   font-family: "Alfa Slab One", cursive;
 
@@ -16,7 +22,8 @@ body {
 
 header {
   width: 100%;
-  padding: 16px 0px;
+  padding: 40px 0px;
+  position: absolute;
 }
 a {
   text-decoration: none;
@@ -63,13 +70,19 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 140px 0;
 }
 .banner-content {
   display: flex;
 }
-.banner-left,
+.banner-left {
+  flex-basis: 40%;
+}
 .banner-right {
-  flex-basis: 50%;
+  flex-basis: 60%;
+}
+.banner-left {
+  margin-top: 120px;
 }
 .banner-right img {
   width: 100%;
@@ -91,7 +104,7 @@ a {
 }
 .banner-left h2 {
   font-family: "Alfa Slab One", cursive;
-  font-size: 114px;
+  font-size: 74px;
   text-transform: uppercase;
   color: #3d2514;
   letter-spacing: 2px;
