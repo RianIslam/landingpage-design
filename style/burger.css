@@ -177,6 +177,7 @@ font-family: "Alfa Slab One", cursive;  */
   letter-spacing: 3px;
 }
 .form-container {
+  padding-top: 60px;
   width: 60%;
   margin: 0 auto;
 }
@@ -232,3 +233,17 @@ font-family: "Alfa Slab One", cursive;  */
   letter-spacing: 1px;
 }
 /* book your table form end */
+
+/* footer section start */
+.footer-container {
+  width: 95%;
+  margin: 0 auto;
+}
+.footer-bg {
+  background-image: url("../images/burger/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+/* footer section end */
