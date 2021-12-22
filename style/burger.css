@@ -193,11 +193,14 @@ font-family: "Alfa Slab One", cursive;  */
   background: transparent;
   border: 1px solid black;
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
-  width: 98.4%;
+  width: 90.4%;
   margin-bottom: 30px;
   outline: none;
+  font-family: "bebas Neue", cursive;
+  border-radius: 4px;
+  letter-spacing: 1px;
 }
 .form-two input {
   display: block;
@@ -205,14 +208,27 @@ font-family: "Alfa Slab One", cursive;  */
   background: transparent;
   border: 1px solid black;
   padding: 10px;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
-  width: 98.4%;
+  width: 90.4%;
   margin-bottom: 30px;
   outline: none;
+  font-family: "bebas Neue", cursive;
+  border-radius: 4px;
+  letter-spacing: 1px;
 }
 .form-two {
   flex-basis: 50%;
   padding-right: 20px;
+}
+.FORM-BTN {
+  background-color: #bf2222;
+  color: white;
+  padding: 11px 156px;
+  border: none;
+  border-radius: 4px;
+  font-family: "bebas Neue", cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 /* book your table form end */
