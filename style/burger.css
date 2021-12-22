@@ -152,6 +152,16 @@ a {
   font-family: "Bebas Neue", cursive;
   font-weight: 500;
 }
+
+/* card style start */
+.testy {
+  background-color: var(--yellow);
+  color: var(--coffe);
+  padding: 10px 40px;
+  border: none;
+}
+/* card style end */
+
 /* fratures section end */
 /* font-family: "Montserrat", sans-serif;
  font-family: "bebas Neue" cursive; 
@@ -270,5 +280,26 @@ font-family: "Alfa Slab One", cursive;  */
 }
 .content-two h3 {
   padding: 10px 0;
+  font-family: "bebas Neue", cursive;
 }
+.content-two i {
+  padding-right: 5px;
+  font-size: 23px;
+}
+.footer-last {
+  margin-top: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+.last-one {
+  flex-basis: 50%;
+}
+.last-two i {
+  padding-left: 8px;
+  font-size: 28px;
+}
+.address i {
+  display: inline;
+}
+
 /* footer section end */
