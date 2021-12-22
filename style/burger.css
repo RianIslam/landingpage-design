@@ -238,6 +238,11 @@ font-family: "Alfa Slab One", cursive;  */
 .footer-container {
   width: 95%;
   margin: 0 auto;
+  color: white;
+}
+.content-container {
+  width: 90%;
+  margin: 0 auto;
 }
 .footer-bg {
   background-image: url("../images/burger/footer-bg.png");
@@ -245,5 +250,25 @@ font-family: "Alfa Slab One", cursive;  */
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
+}
+
+.footer-content {
+  display: flex;
+}
+.content-one {
+  flex-basis: 50%;
+}
+.content-one img {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.content-two {
+  flex-basis: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.content-two h3 {
+  padding: 10px 0;
 }
 /* footer section end */
