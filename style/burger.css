@@ -224,11 +224,11 @@ font-family: "Alfa Slab One", cursive;  */
 .FORM-BTN {
   background-color: #bf2222;
   color: white;
-  padding: 11px 156px;
+  padding: 10px 134px;
   border: none;
   border-radius: 4px;
-  font-family: "bebas Neue", cursive;
-  font-size: 16px;
-  letter-spacing: 2px;
+  font-family: "Alfa Slab One", cursive;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
 /* book your table form end */
