@@ -153,3 +153,66 @@ a {
   font-weight: 500;
 }
 /* fratures section end */
+/* font-family: "Montserrat", sans-serif;
+ font-family: "bebas Neue" cursive; 
+font-family: "Alfa Slab One", cursive;  */
+/* book your table form start */
+.form-bg {
+  background-image: url("../images/burger/form-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.form-bg h2 {
+  padding-top: 80px;
+  text-align: center;
+  font-family: "bebas Neue", cursive;
+  letter-spacing: 2px;
+}
+.form-bg h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 3px;
+}
+.form-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.form-flex {
+  display: flex;
+}
+.form-one {
+  flex-basis: 50%;
+  padding-right: 20px;
+}
+.form-one input {
+  display: block;
+  border: none;
+  background: transparent;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+  width: 98.4%;
+  margin-bottom: 30px;
+  outline: none;
+}
+.form-two input {
+  display: block;
+  border: none;
+  background: transparent;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+  width: 98.4%;
+  margin-bottom: 30px;
+  outline: none;
+}
+.form-two {
+  flex-basis: 50%;
+  padding-right: 20px;
+}
+/* book your table form end */
