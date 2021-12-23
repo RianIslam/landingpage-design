@@ -159,6 +159,10 @@ a {
   color: var(--coffe);
   padding: 10px 40px;
   border: none;
+  border-radius: 5px;
+}
+.cardtitle-center {
+  text-align: center;
 }
 /* card style end */
 
@@ -303,3 +307,7 @@ font-family: "Alfa Slab One", cursive;  */
 }
 
 /* footer section end */
+
+/* start slider page design */
+
+/* end slider page design */
