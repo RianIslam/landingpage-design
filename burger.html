@@ -139,17 +139,35 @@
     <!-- slider for burger section start here -->
     <section class="events">
       <div class="container">
+
+        
+
+
         <div class="x-box">
-          <div class="e-content">
-            <div class="e-left">
-              <h4>Discover</h4>
-              <h2>Upcoming Events</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus a dolore dolorem! Asperiores at saepe eos numquam, voluptas laudantium quasi, optio porro perspiciatis harum minus neque doloremque a? Exercitationem omnis quam nesciunt facere, placeat libero sapiente hic dolor. Repellat, facilis?</p>
+         
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+            <div class="item">
+            <div class="item">
+              <div class="e-content">
+                <div class="e-left">
+                  <h4>Discover</h4>
+                  <h2>Upcoming Events</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus a dolore dolorem! Asperiores at saepe eos numquam, voluptas laudantium quasi, optio porro perspiciatis harum minus neque doloremque a? Exercitationem omnis quam nesciunt facere, placeat libero sapiente hic dolor. Repellat, facilis?</p>
+                </div>
+                <div class="e-right">
+                  <img src="./images/burger/slider-pic.png" alt="">
+                </div>
             </div>
-            <div class="e-right">
-              <img src="./images/burger/slider-pic.png" alt="">
-            </div>
+            
+            
+        </div>
+
+
           </div>
+
+
+          
         </div>
       </div>
 
@@ -235,5 +253,26 @@
 
     <script src="./js/jquery.min.js"></script>
     <script src="./js/owl.carousel.js"></script>
+    <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+    </script>
   </body>
 </html>
