@@ -159,16 +159,62 @@ a {
   color: var(--coffe);
   padding: 10px 40px;
   border: none;
-  border-radius: 5px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "bebas Neue", cursive;
 }
 .cardtitle-center {
   text-align: center;
+}
+.card-content {
+  text-align: center;
+}
+.card-content h1 {
+  font-size: 40px;
+  padding: 20px 0;
+  color: var(--coffe);
+  font-family: "Alfa Slab One", cursive;
+}
+.card-content p {
+  color: var(--coffe);
+  padding: 5px 0;
+}
+.bws {
+  padding: 30px 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.cardOne img {
+  width: 100%;
+}
+.cardOne h1 {
+  font-family: "bebas Neue", cursive;
+  color: var(--coffe);
+  letter-spacing: 1px;
+  padding: 10px 5px;
+  font-size: 30px;
+}
+.cardOne p {
+  font-family: "bebas Neue", cursive;
+  color: var(--coffe);
+  padding: 20px 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.order {
+  color: white;
+  padding: 10px 30px;
+  background-color: var(--red);
+  font-family: "Alfa Slab One", cursive;
+  cursor: pointer;
+  border: none;
 }
 /* card style end */
 
 /* fratures section end */
 /* font-family: "Montserrat", sans-serif;
- font-family: "bebas Neue" cursive; 
+ font-family: "bebas Neue" ,cursive; 
 font-family: "Alfa Slab One", cursive;  */
 /* book your table form start */
 .form-bg {
