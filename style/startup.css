@@ -188,6 +188,20 @@ font-family: 'Roboto', sans-serif; */
 }
 .a-content a {
   color: white;
+  background: var(--blue);
+  color: #fff;
+  display: inline-block;
+  padding: 12px 33px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  border: 1px solid transparent;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
 }
 
 /* about section style start */
