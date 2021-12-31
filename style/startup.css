@@ -168,9 +168,23 @@ font-family: 'Roboto', sans-serif; */
 }
 .a-content h4 {
   color: white;
+  margin-top: 25px;
+  margin-bottom: 54px;
+  font-size: 40px;
+  font-weight: 400;
+  z-index: 0;
+  padding-bottom: 15px;
 }
 .a-content p {
   color: white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 14px;
+  font-family: "Mulish", sans-serif;
+  width: 80%;
+}
+.second {
+  font-size: 18px !important;
 }
 .a-content a {
   color: white;
