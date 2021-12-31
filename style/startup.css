@@ -145,6 +145,40 @@ font-family: 'Roboto', sans-serif; */
 }
 
 /* service section end */
+.a-left {
+  background-image: url(../images/startup/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.a-right {
+  background-color: #212529;
+  padding: 140px 140px 140px 100px;
+}
+.a-content h6 {
+  color: white;
+  position: relative;
+  z-index: 3;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 19px;
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+.a-content h4 {
+  color: white;
+}
+.a-content p {
+  color: white;
+}
+.a-content a {
+  color: white;
+}
+
+/* about section style start */
+
+/* about section style end */
 /* font-family: 'Mulish', sans-serif;
 
 font-family: 'Roboto', sans-serif; */
