@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 :root {
   --blue: #615cfd;
+  --black: #1f1f1f;
 }
 a {
   text-decoration: none;
@@ -94,6 +95,27 @@ font-family: 'Roboto', sans-serif; */
 .services {
   width: 100%;
   padding: 120px 0px;
+}
+.s-content h6 {
+  position: relative;
+  z-index: 3;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--blue);
+  text-transform: capitalize;
+  margin-bottom: 19px;
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+.s-content h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 400;
+  color: var(--black);
+  position: relative;
+  z-index: 0;
+  padding-bottom: 15px;
 }
 /* service section end */
 /* font-family: 'Mulish', sans-serif;
