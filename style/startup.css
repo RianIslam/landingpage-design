@@ -286,6 +286,51 @@ font-family: 'Roboto', sans-serif; */
 }
 /* featured section end */
 
+/* 3d section start */
+.work {
+  position: absolute;
+
+  right: 0;
+}
+.work img {
+  border-radius: 30px 0 0 30px;
+}
+
+.h-w-work .a-content h4 {
+  color: var(--black);
+}
+.h-w-work .a-content h6 {
+  color: var(--black);
+  font-size: 30px;
+  font-family: "Mulish", sans-serif;
+}
+.h-w-work .a-content a {
+  color: var(--black);
+}
+.h-w-work .a-content p {
+  color: var(--black);
+}
+.h-w-work .a-content a {
+  background-color: transparent !important;
+  margin-top: 30px;
+}
+.h-w-work .a-content a i {
+  background: var(--blue) !important;
+  color: white;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 100%;
+}
+
+.work-padding {
+  padding: 0 !important;
+  background-color: transparent;
+  margin-left: 10px;
+}
+/* 3d section end */
+
 /* 
 font-family: 'Mulish', sans-serif;
 
