@@ -289,7 +289,6 @@ font-family: 'Roboto', sans-serif; */
 /* 3d section start */
 .work {
   position: absolute;
-
   right: 0;
 }
 .work img {
@@ -329,8 +328,62 @@ font-family: 'Roboto', sans-serif; */
   background-color: transparent;
   margin-left: 10px;
 }
+
 /* 3d section end */
 
+/* team section start here */
+.team {
+  margin-top: 170px;
+}
+.social-icon ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+.social-icon ul li a i {
+  height: 40px;
+  width: 40px;
+  background: var(--blue);
+  color: white;
+  border-radius: 100%;
+  line-height: 40px;
+}
+.social-icon {
+  position: absolute;
+  bottom: -10%;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.profile-img {
+  position: relative;
+}
+.team-profile:hover .social-icon {
+  bottom: 0%;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+/* team section end here */
+
+/* contact start  */
+.contact {
+  margin: 100px 0;
+  width: 100%;
+}
+.first input {
+  flex-basis: 48%;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form input,
+form textarea {
+  border-radius: 35px;
+  padding: 16px !important;
+}
+.d-block {
+  width: 100%;
+}
+/* contact end  */
 /* 
 font-family: 'Mulish', sans-serif;
 
