@@ -8,6 +8,7 @@
 :root {
   --sky: #eaefff;
   --orange: #fe5c24;
+  --blue: #0c3e72;
 }
 a {
   text-decoration: none !important;
@@ -65,3 +66,40 @@ body {
   margin-right: 6px;
 }
 /* topbar end */
+
+/* mainheader start */
+.main-header {
+  padding: 20px 0px;
+}
+.book-btn {
+  background-color: var(--orange);
+  padding: 13px 30px;
+  border: none;
+  color: white;
+  border: 1px solid var(--orange);
+}
+.nav-link {
+  font-size: 16px;
+  color: var(--blue) !important;
+}
+.nav-item {
+  margin: 0 16px;
+}
+/* mainheader end */
+
+/* banner start */
+#banner {
+  width: 100%;
+  background-image: url(../images/martine/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.banner-content {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+/* banner end */
