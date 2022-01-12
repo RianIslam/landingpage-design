@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: 1140px !important;
   margin: 0 auto;
 }
 
@@ -94,7 +94,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
 }
 .banner-content {
   display: flex;
@@ -102,8 +102,237 @@ body {
   align-items: center;
   justify-content: center;
 }
+.banner-content h6 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+}
+.banner-content h1 {
+  font-size: 120px;
+  margin-bottom: 22px;
+  line-height: 1;
+  color: white;
+  font-weight: 700;
+}
+.banner-content a {
+  background-color: #2493e0;
+  padding: 23px 79px;
+  margin-top: 42px;
+  display: inline-block;
+  color: white;
+}
 /* banner end */
 
 /* boxbanner start */
+.tab-items {
+  background-color: #fdfdfd;
+  padding: 0 100px;
+}
 
+.tab-items ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 24px 16px;
+}
+
+.search-form {
+  background-color: #fdfdfd;
+  padding: 24px 0;
+}
+.search-box {
+  margin-top: -72px;
+  box-shadow: 0 10px 40px 0 rgba(221, 222, 222, 1);
+}
+.s-box-item-2 {
+  position: relative;
+}
+.s-box-item-2 i {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.s-box-item-3 {
+  position: relative;
+}
+.s-box-item-3 i {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.s-box-item {
+  padding: 16px;
+  width: 210px;
+  border-color: #2493e0;
+  color: #2493e0;
+  margin: 0 12px;
+}
+.search-form input {
+  border: 1px solid #2493e0;
+}
+.search-form input::placeholder {
+  color: #2493e0;
+}
+.search-form i {
+  color: #2493e0;
+}
+.search-btn {
+  background: #fe5c24;
+  padding: 16px 30px;
+  border: 1px solid #fe5c24 !important;
+  color: white;
+}
+
+.tab-items ul li {
+  position: relative;
+}
+.tab-active {
+  content: " ";
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2493e0;
+  transition: 0.5s;
+}
+
+/* .tab-items ul li:hover::before {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+} */
+.tab-items ul li:hover {
+  cursor: pointer;
+}
 /* boxbanner end */
+
+/* place-to-visit start */
+#place-to-visit {
+  width: 100%;
+  padding: 100px 0px;
+}
+.section-title h2 {
+  color: #0c3e72;
+  font-size: 46px;
+  line-height: 1.1;
+  margin-top: 26px;
+  font-weight: 600;
+}
+.section-title p {
+  color: #777;
+  font-weight: 400;
+}
+
+.item-overlay .category {
+  background-color: var(--orange);
+  padding: 10px 25px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.item-overlay h3 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.item-overlay p {
+  color: #fff;
+}
+.place-review i {
+  color: gold;
+}
+.place-review span {
+  color: white;
+}
+
+.place-item {
+  position: relative;
+}
+.place-item::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0c3e72;
+  opacity: 0;
+}
+.place-item:hover::after {
+  opacity: 0.75;
+}
+.item-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  opacity: 0;
+  z-index: 9999;
+  transition: 0.5s;
+}
+.place-item:hover .item-overlay {
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+.discover-btn {
+  background-color: var(--orange);
+  padding: 10px 25px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.discover-btn:hover {
+  background-color: var(--sky);
+}
+/* place-to-visit end */
+
+/* event start */
+#events {
+  width: 100%;
+  background-image: url(../images/martine/eventbg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.event_slider_content {
+  background-color: white;
+  padding: 50px;
+}
+.event_slider_content h5 {
+  color: var(--orange);
+  margin-bottom: 18px;
+}
+.event_slider_content h2 {
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #0c3e72;
+}
+.event_slider_content p {
+  margin-bottom: 15px;
+  color: #848484;
+}
+
+.owl-dots {
+  display: none;
+}
+.owl-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 80px;
+  width: 80px;
+  background: rgba(255, 255, 255, 0.5);
+  color: var(--orange);
+  font-size: 48px;
+  text-align: center;
+  border-radius: 100%;
+  transform: translateY(-50%);
+}
+/* event end */
