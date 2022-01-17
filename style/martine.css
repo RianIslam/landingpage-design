@@ -336,3 +336,227 @@ body {
   transform: translateY(-50%);
 }
 /* event end */
+
+/* top hotel start */
+#top-hotel {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.h-item h3 {
+  color: #0c3e72;
+  font-size: 24px;
+}
+.h-item .place-item span {
+  color: #000 !important;
+}
+.h-item .place {
+  color: #a2a2a2;
+}
+
+.s-media-icon ul li {
+  list-style: none;
+}
+.s-media-icon ul {
+  padding-left: 0;
+}
+.s-media-icon ul li a i {
+  background-color: rgba(255, 122, 75, 0.7);
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+}
+.share a i {
+  background-color: rgba(150, 150, 150, 0.7);
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+}
+.h-item {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 16px;
+}
+.hotel-hover {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.s-media-icon {
+  opacity: 0;
+  transform: scale(0);
+}
+.share a {
+  transition: 1s;
+  transform: scaleX(1);
+}
+.share a:hover {
+  display: inline-block;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+.hotel-hover:hover .share a {
+  display: inline-block;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+.hotel-hover:hover .s-media-icon {
+  transform: scaleY(1);
+  transition: 1s ease-in-out;
+  opacity: 1;
+}
+
+/* top hotel end */
+
+/* said section start */
+#they-said {
+  padding: 40px 0px;
+  width: 100%;
+  background-color: var(--blue);
+}
+
+.said-card {
+  background-color: #0e477d;
+  padding: 30px;
+}
+
+/* said section end */
+
+/* offer section start */
+
+.offer-body h3 {
+  color: var(--blue);
+  padding: 20px 0;
+}
+.offer-body p {
+  color: #aaaaaa;
+  font-size: 16px;
+}
+/* offer section end */
+
+/* footer stat */
+footer {
+  background-color: #162b45;
+  padding: 130px 0;
+  width: 100%;
+}
+.f-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 32px;
+}
+.f-place-list li {
+  list-style: none !important;
+}
+.f-place-list li a {
+  color: white;
+  font-size: 15px;
+}
+.f-place-list li a {
+  font-size: 15px;
+  color: white;
+  transition: 0.5s;
+}
+.f-place-list li a:hover {
+  margin-left: 8px;
+  transition: 0.5s;
+}
+.Subscribe-text {
+  font-size: 15px;
+  color: white;
+}
+.address {
+  color: white;
+  font-size: 15px;
+}
+.f-email {
+  font-size: 14px;
+  color: var(--orange);
+}
+.f-media-link li {
+  list-style: none;
+  display: inline-block;
+}
+.f-media-link li a {
+  color: white;
+}
+
+.subs input {
+  height: 50%;
+  background-color: var(--blue);
+  color: #eee;
+  width: 70%;
+  padding: 16px;
+  border: none;
+}
+.subs button {
+  background: var(--orange);
+  color: white;
+  height: 50px;
+  width: 50px;
+  border: none;
+  font-size: 18px;
+}
+.subs input:focus {
+  outline: none;
+}
+.subs input::placeholder {
+  font-size: 15px;
+}
+.subs input:focus::placeholder {
+  opacity: 0;
+}
+
+.footer-end {
+  background-color: #08223a;
+  text-align: center;
+  color: #9b9b9b;
+  padding: 50px 0;
+}
+.footer-end span {
+  color: var(--orange);
+}
+/* footer end */
+
+/* navbar sickey start */
+.sticky {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  z-index: 9999;
+  padding: 0;
+}
+/* navbar sickey end */
+
+.sub-menu {
+  background-color: turquoise;
+  position: absolute;
+  width: 120px;
+  top: 68px;
+  left: 0;
+  opacity: 0;
+}
+.nav-item:hover .sub-menu {
+  opacity: 1;
+  transition: 0.5s;
+}
+.sub-menu ul li {
+  list-style: none;
+  line-height: 1.7;
+}
+.sub-menu ul li a {
+  font-size: 15px;
+  color: white;
+}
+.nav-item {
+  position: relative;
+}

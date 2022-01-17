@@ -1,0 +1,82 @@
+:root {
+  --primary: #ff0000;
+}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none !important;
+}
+p,
+button,
+a,
+li,
+span {
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* mainheader start */
+.main-header {
+  padding: 20px 0px;
+}
+.nav-link {
+  font-size: 16px;
+}
+.nav-item {
+  margin: 0 16px;
+}
+.nav-item a {
+  font-size: 15px;
+}
+.nav-item .active {
+  color: var(--primary);
+}
+.nav-item a {
+  color: black;
+  font-weight: 300;
+}
+/* mainheader end */
+
+/* font-family: "Open Sans", sans-serif;
+font-family: "Josefin Sans", sans-serif; */
+/* hero banner start */
+#heroBanner {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+.hTitle h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 65px;
+  margin-top: 100px;
+  margin-left: 40px;
+}
+.hIcon ul li {
+  list-style: none;
+}
+.hIcon ul li a {
+  color: #525252;
+  font-size: 20px;
+}
+
+.owl-nav {
+  display: none;
+}
+.owl-theme .owl-dots {
+  padding-top: 20px;
+}
+/* hero banner end */
+
+/* font-family: "Open Sans", sans-serif;
+font-family: "Josefin Sans", sans-serif; */
