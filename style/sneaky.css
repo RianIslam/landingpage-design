@@ -1,11 +1,19 @@
 :root {
   --primary: #ff0000;
+  --btnPrimary: #e22104;
+  --black: #2f2d4e;
 }
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+span {
+  color: var(--primary);
+}
+p {
+  color: dimgrey;
 }
 a {
   text-decoration: none !important;
@@ -27,6 +35,15 @@ h6 {
 }
 
 /* mainheader start */
+.sticky {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #87ff4f;
+  z-index: 9999;
+  padding: 0;
+}
 .main-header {
   padding: 20px 0px;
 }
@@ -43,7 +60,7 @@ h6 {
   color: var(--primary);
 }
 .nav-item a {
-  color: black;
+  color: var(--black);
   font-weight: 300;
 }
 /* mainheader end */
@@ -60,6 +77,8 @@ font-family: "Josefin Sans", sans-serif; */
   font-family: "Josefin Sans", sans-serif;
   font-size: 65px;
   margin-top: 100px;
+}
+.hcontent {
   margin-left: 40px;
 }
 .hIcon ul li {
@@ -69,6 +88,40 @@ font-family: "Josefin Sans", sans-serif; */
   color: #525252;
   font-size: 20px;
 }
+.primaryBtn {
+  background-color: var(--btnPrimary);
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 12px 45px;
+  border-radius: 50px;
+}
+.watchBtn {
+  background-color: white;
+  color: var(--black);
+  border: none;
+  padding: 12px 5px 12px 45px;
+}
+.watchBtn i {
+  font-size: 20px;
+}
+.service {
+  border-right: 1px solid #ddd;
+}
+.service:nth-child(3) {
+  border-right: none;
+}
+.service:nth-child(3) i {
+  color: #0077ff;
+}
+.service:nth-child(2) i {
+  color: var(--btnPrimary);
+}
+.serviceItem i {
+  font-size: 30px;
+  color: aquamarine;
+  padding: 10px 0;
+}
 
 .owl-nav {
   display: none;
@@ -77,6 +130,336 @@ font-family: "Josefin Sans", sans-serif; */
   padding-top: 20px;
 }
 /* hero banner end */
+
+/* about section start */
+#aboutUs {
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+.aboutOne {
+  position: relative;
+}
+.aboutTwo {
+  position: absolute;
+  left: 350px;
+  bottom: -1000px;
+  overflow: hidden;
+}
+.aboutContent {
+}
+/* about section end */
+
+/* fresh food start */
+#featuredFood {
+  width: 100%;
+  overflow: hidden;
+  padding: 100px 0;
+}
+.pizzaContent {
+  background-color: #fff8f7 !important;
+}
+.pizzaContent img {
+  width: 100%;
+}
+.featureContent h4 {
+  position: relative;
+}
+
+.borderFresh::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #7c7c7c;
+  width: 100px;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+}
+
+/* fresh food end */
+
+/* italian food start */
+#italian {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-color: #fff8f7;
+  padding: 100px 0;
+}
+.italianPizzaOne {
+  position: relative;
+}
+.italiaCard {
+  position: absolute;
+  background: var(--btnPrimary);
+  padding: 80px;
+  color: white;
+  text-align: center;
+  left: 650px;
+  bottom: -2530px;
+  overflow: hidden;
+}
+.italianBtn {
+  background: var(--btnPrimary);
+  color: white;
+  padding: 12px 45px;
+  border-radius: 50px;
+  border: none;
+  border: 2px solid #ddd;
+}
+/* italian food end */
+
+/* food menu start */
+.roastBg {
+  background-color: #fff8f7;
+}
+
+.roastBg:hover {
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: 0.2s ease-in-out;
+}
+.foodMenuContent h4 {
+  position: relative;
+}
+
+.borderTitle::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #7c7c7c;
+  width: 100px;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+
+.roastBg h4 {
+  position: relative;
+}
+.borderCommon::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #7c7c7c;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+/* food menu end */
+
+/* trendy start */
+#trendy {
+  padding: 100px 0;
+  margin: 100px 0;
+  width: 100%;
+  background-image: url(../images/sneaky/home1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  overflow: hidden;
+  background-blend-mode: multiply;
+  color: white;
+  background-color: #5c645e;
+}
+/* trendy end */
+
+/* chef start */
+
+#chef {
+  width: 100%;
+}
+
+.chefHover .category {
+  background-color: var(--orange);
+  padding: 10px 25px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+.chefHover h3 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.chefHover p {
+  color: #fff;
+}
+.chefSocal i {
+  color: white;
+  display: block;
+  padding: 10px 0;
+}
+.chefSocal span {
+  color: white;
+}
+
+.chefCard {
+  position: relative;
+}
+
+.chefCard::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5f5f5f;
+  opacity: 0;
+}
+.chefCard:hover::after {
+  opacity: 0.75;
+}
+.chefHover {
+  position: absolute;
+  top: 100px;
+  /* left: 100px; */
+  right: 20%;
+  opacity: 0;
+  z-index: 9999;
+  transition: 0.5s;
+}
+.chefCard:hover .chefHover {
+  opacity: 1;
+  transform: translateY(10px);
+  transition: 0.5s ease-in-out;
+}
+
+.chefWhiteCard {
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  top: 75%;
+  right: 15%;
+  width: 300px;
+}
+/* chef end */
+
+/* reservation section start */
+#reservation {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #fff8f7;
+  margin-top: 100px;
+}
+.getBorder {
+  position: relative;
+}
+.getLine::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #7c7c7c;
+  width: 100px;
+  position: absolute;
+  right: 55%;
+  top: 50%;
+}
+
+.formBox {
+  background-image: url(../images/sneaky/home1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+
+.nameField input {
+  border: none;
+  background: white;
+  padding: 10px;
+  font-size: 16px;
+  color: #747474;
+  width: 400px;
+  /* margin-bottom: 10px; */
+  outline: none;
+
+  /* margin-left: 30px;
+  margin-top: 10px; */
+}
+/* reservation section end */
+
+/* blog section start */
+#blog {
+  width: 100%;
+  padding-bottom: 100px;
+}
+.pizzaContent:hover {
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: 0.2s ease-in-out;
+}
+/* blog section end */
+
+/* footer start */
+footer {
+  width: 100%;
+  margin: 20px 0;
+  padding: 100px 0;
+  background-color: #fff8f7;
+}
+
+.footerbox li {
+  list-style: none !important;
+  padding: 4px 0;
+}
+.footerbox li a {
+  font-size: 15px;
+}
+.footerbox li a {
+  font-size: 15px;
+  color: black;
+  transition: 0.5s;
+  padding: 10px 0;
+}
+.footerbox li a:hover {
+  color: var(--primary);
+}
+
+.subs input {
+  height: 50%;
+  background-color: var(--blue);
+  color: #eee;
+  width: 70%;
+  padding: 16px;
+  border: none;
+}
+
+.subs button {
+  background: var(--primary);
+  color: white;
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  border: 1px solid #ddd !important;
+}
+
+.marginFooter {
+  padding-right: 100px;
+}
+.fMediaLink li {
+  list-style: none;
+  display: inline-block;
+}
+.fMediaLink li a i {
+  color: white;
+  background-color: #0e0e3d;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+/* footer end */
 
 /* font-family: "Open Sans", sans-serif;
 font-family: "Josefin Sans", sans-serif; */
