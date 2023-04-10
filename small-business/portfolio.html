@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Portfoli Page</title>
+  </head>
+
+  <style>
+    /* Custom styles for the portfolio page */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #343a40;
+      color: #ffffff;
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      color: #ffffff;
+    }
+
+    .hero-section {
+      height: 100vh;
+      background-image: url("portfolio-hero.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 48px;
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+
+    .portfolio-section {
+      padding: 50px 0;
+    }
+
+    .portfolio-section h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .portfolio-section .portfolio-item {
+      margin-bottom: 30px;
+    }
+
+    .portfolio-section .portfolio-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .contact-section {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+
+    .contact-section h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .contact-section form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-section label {
+      font-weight: bold;
+    }
+
+    .contact-section textarea {
+      resize: none;
+    }
+
+    .footer-section {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .footer-section p {
+      margin-bottom: 0;
+    }
+  </style>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./service.html">Service Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.php">Contact Page</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="hero-section">
+      <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am a web developer with expertise in front-end technologies.</p>
+        <a href="#portfolio-section" class="btn btn-primary">View Portfolio</a>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio-section" class="portfolio-section">
+      <div class="container">
+        <h2>My Portfolio</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img src="portfolio-item1.jpg" alt="Portfolio Item 1" />
+              <h4>Project 1</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                mollis nunc sed dapibus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img src="portfolio-item2.jpg" alt="Portfolio Item 2" />
+              <h4>Project 2</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                mollis nunc sed dapibus.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="portfolio-item">
+              <img src="portfolio-item3.jpg" alt="Portfolio Item 3" />
+              <h4>Project 3</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                mollis nunc sed dapibus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
